@@ -1,0 +1,38 @@
+---
+title: "Beavers are hot"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+## R Markdown
+
+Beavers are large, semiaquatic rodents of the temperate Northern Hemisphere. There are two extant species in the genus Castor, the North American beaver (Castor canadensis) and the Eurasian beaver (C. fiber). Beavers are the second-largest living rodents after the capybaras. They have stout bodies with large heads, long chisel-like incisors, brown or gray fur, hand-like front feet, webbed back feet and flat, scaly tails. The Eurasian beaver has a more elongated skull with a more triangular nasal bone opening, lighter fur color and narrower tail. The animals can be found in a number of freshwater habitats, such as rivers, streams, lakes and ponds. They are herbivorous and consume tree bark, aquatic plants, grasses and sedges. 
+
+We measured the body temperature of a beaver was measured by telemetry every 10 minutes and show an excerpt here. 
+
+Data is from: P. S. Reynolds (1994) Time-series analyses of beaver body temperatures. Chapter 11 of Lange, N., Ryan, L., Billard, L., Brillinger, D., Conquest, L. and Greenhouse, J. eds (1994) Case Studies in Biometry. New York: John Wiley and Sons. 
+
+```{r include=FALSE}
+#add libraries
+library(RCurl)
+library(plyr)
+library(ggplot2)
+
+#grab data from github
+beaver.URL <- getURL("https://raw.githubusercontent.com/NoushinN/reproducible_workflows/master/beaver.csv")
+beaver<-read.csv(text=beaver.URL)
+```
+
+```{r include=FALSE}
+#get the average temp for each day
+beaver.mean<-ddply(beaver, .(day), .fun= summarise, mean.temp = mean(temp))
+```
+
+```{r, warning=FALSE, echo=FALSE}
+beaver.plot<-ggplot(beaver.mean, aes(x=day, y = mean.temp))+geom_bar(stat = "identity")+
+  labs(x = "Day", y="Mean tempertature")
+plot(beaver.plot)
+```
+
+Figure 1. Mean temperature of the beaver on day 346 and 347

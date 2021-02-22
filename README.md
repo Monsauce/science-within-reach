@@ -22,9 +22,9 @@ Following the structure of the workshop, the resources are divided by segements 
 * R Markdown: https://rmarkdown.rstudio.com
 * Biorxiv: https://www.biorxiv.org
 * PREreview: https://prereview.org
-* Sherpa/Romeo: https://v2.sherpa.ac.uk/romeo/
-* Unpaywall: https://unpaywall.org/
-* Scite: https://scite.ai/
+* Sherpa/Romeo: https://v2.sherpa.ac.uk/romeo
+* Unpaywall: https://unpaywall.org
+* Scite: https://scite.ai
 
 ## Open science and policy in Canada 
 Some further readings on open science policy in Canada
@@ -33,7 +33,7 @@ Some further readings on open science policy in Canada
 * Directive on Open Government: https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108
 
 ## Other open science courses/resources
-* A Step-by-Step Guide to creating a Student Initiative for Open Science: https://osf.io/5a637/
-* Open scientist handbook: https://openscientist.pubpub.org/pub/play/release/1?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+OATP-Primary+%28OATP+primary%29
-* Knowledge Equity Lab: https://knowledgeequitylab.ca/
+* A Step-by-Step Guide to creating a Student Initiative for Open Science: https://osf.io/5a637
+* Open scientist handbook: hhttps://openscientist.pubpub.org/pub/play/release/1
+* Knowledge Equity Lab: https://knowledgeequitylab.ca
 

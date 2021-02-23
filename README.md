@@ -34,6 +34,6 @@ Some further readings on open science policy in Canada
 
 ## Other open science courses/resources
 * A Step-by-Step Guide to creating a Student Initiative for Open Science: https://osf.io/5a637
-* Open scientist handbook: hhttps://openscientist.pubpub.org/pub/play/release/1
+* Open scientist handbook: hhttps://openscientist.pubpub.org/pub/play/release/1/
 * Knowledge Equity Lab: https://knowledgeequitylab.ca
 
